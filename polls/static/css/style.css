@@ -1,0 +1,178 @@
+h1, h2, h3, h4, h5, h6 {
+    color: #0c460c;
+    text-align: center;
+}
+h1 {
+    font-size: 2.5em;
+}
+h2 {
+    font-size: 1.8em;
+}
+h3 {
+    font-size: 1.2em;
+}
+h4 {
+    font-size: 0.8em;
+}
+.div_left {
+    position: relative;
+    float: left;
+    width: 25%;
+    min-width: 350px;
+    margin: 5px;
+}
+.div_center {
+    position: relative;
+    float: left;
+    width: 73%;
+    min-width: 680px;
+    margin: 5px;
+}
+.div_right {
+    position: relative;
+    float: right;
+    width: 25%;
+    min-width: 350px;
+    margin: 5px;
+}
+.tb, .tbn {
+    width: 100%;
+    font-size: 10pt;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 1px;
+    background: #bbe0b9;
+    border: 5px solid #acccaa;
+    border-radius: 0px 0px 10px 10px;
+}
+.table_name {
+    width: 100%;
+    /* padding: 7px 0px; */
+    /* margin-bottom: 1px; */
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    text-align: center;
+    font-size: 18pt;
+    /* background-color: #acccaa; */
+    border-radius: 10px 10px 0px 0px;
+}
+.table_name p {
+    background-color: #d7f7cf;
+    margin-left: -50%;
+    /*float: inherit;*/
+    border: 5px solid #acccaa;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+}
+.table_name div {
+    float: left;
+    margin-left: 50%;
+}
+#vert {
+    width: 10%;
+}
+#vert td {
+    text-align: center;
+    padding: 10px 0;
+}
+.vert-text {
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -ms-transform-origin: left top 0;
+    -moz-transform-origin: left top 0;
+    -webkit-transform-origin: left top 0;
+    transform-origin: left top 0;
+    margin-left: 30px;
+    padding: 0;
+    float: left;
+    height: 80px;
+    width: 5px;
+    /*white-space: nowrap;*/
+}
+thead {
+    font-weight: bold;
+}
+.tb tbody {
+    counter-reset: schetchik;
+}
+.tb tbody tr:hover td, .tbn tbody tr:hover td {
+    background-color: white;
+}
+.tb tbody tr, .tbn tbody tr {
+    counter-increment: schetchik;
+    font-size: 10pt;
+    padding: 2px;
+}
+.tb tbody tr:before {
+    content: counter(schetchik);
+}
+.tr_red td {
+    background: #f9c2c2;
+}
+.tb td, .tbn td {
+    text-align: center;
+    background: #d7f7cf;
+    padding: 3px;
+    border-radius: 2px;
+}
+.karusel_group {
+    margin: 0px;
+    float: left;
+    width: 120px;
+}
+.karusel_group_item {
+    float: left;
+    margin: 1px 0px;
+    padding: 10px 0;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    text-align: center;
+    font-size: 12pt;
+    border-radius: 0px 5px 5px 0px;
+    min-width: 120px;
+    background-color: #acccaa;
+}
+.karusel_group_item:hover {
+    color: red;
+    background: #d7f7cf;
+    border-right: solid blue 3px;
+}
+.SELECT {
+    color: red;
+    background: #d7f7cf;
+    border-bottom: solid green 3px;
+}
+.main_item_group {
+    margin: 1%;
+    width: 17%;
+    min-height: 150px;
+    max-width: 250px;
+    border-radius: 15px;
+    background-color: #d7f7cf;
+    padding: 5px;
+    position: relative;
+    border: 2px solid darkgreen;
+    display: inline-grid;
+}
+.main_item_group:hover {
+    /*border: 2px solid darkblue;*/
+    background-color: white;
+}
+.main_item_group:hover h5 {
+    color: darkblue;
+}
+.main_item_group h5{
+    text-align: center;
+    font-size: 30pt;
+    color: #0c460c;
+    margin: 0px;
+    margin-bottom: 7px;
+}
+.main_item_group p{
+    text-align: center;
+    font-size: 15pt;
+    color: black;
+    margin: 0px;
+    margin-bottom: 7px;
+}

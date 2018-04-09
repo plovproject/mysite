@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="{% static 'css/reset.css' %}">-->
+    <!--<link rel="stylesheet" href="{% static 'css/style.css' %}">-->
+    <title>Главная</title>
+</head>
+<body>
+<h1>Главная</h1>
+    {% if user.is_authenticated %}
+        <p>Добро пожаловать {{ user.username }}!!! <a href="logout/"> (выход)</a>/<a href="chat_room/">chat_room</a></p>
+    {% else %}
+        <p>Привет, незнакомец! :)</p>
+        <p><a href="register/">Регистрируйся</a> скорее или <a href="login/">заходи</a> и начнём!</p>
+    {% endif %}
+</body>
+</html>
